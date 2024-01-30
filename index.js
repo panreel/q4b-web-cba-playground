@@ -1,7 +1,6 @@
 const pki = require('node-forge').pki;
 const http = require('http'); 
-const host = '127.0.0.1'; 
-const port = process.env.PORT || 8080; 
+const port = process.env.PORT || 3000; 
 const server = http.createServer((req, res) => { 
     const header = req.headers['X-ARR-ClientCert'];
             if (!header) {
@@ -29,6 +28,6 @@ const server = http.createServer((req, res) => {
     res.setHeader('Content-Type', 'text/plain'); 
     res.end('This is a protected resource\n'); 
 }); 
-server.listen(port, host, () => { 
-    console.log(`Server running at http://${host}:${port}/`); 
+server.listen(port, () => { 
+    console.log(`Server running on port ${port}`); 
 });
