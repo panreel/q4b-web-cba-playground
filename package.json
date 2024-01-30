@@ -1,0 +1,14 @@
+{
+  "name": "q4b-web-cba-playground",
+  "version": "1.0.0",
+  "description": "Testing CBA capabilities in Q4B",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-forge": "^1.3.1"
+  }
+}
