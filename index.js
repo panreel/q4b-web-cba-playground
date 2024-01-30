@@ -2,6 +2,7 @@ const pki = require('node-forge').pki;
 const http = require('http'); 
 const port = process.env.PORT || 3000; 
 const server = http.createServer((req, res) => { 
+    console.log(req.headers);
     const header = req.headers['X-ARR-ClientCert'];
             if (!header) {
                 res.statusCode = 200; 
