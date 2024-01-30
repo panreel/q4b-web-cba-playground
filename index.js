@@ -1,7 +1,7 @@
 const pki = require('node-forge').pki;
 const http = require('http'); 
 const host = '127.0.0.1'; 
-const port = process.env.PORT || 8080; 
+const port = process.env.PORT || 3000; 
 const server = http.createServer((req, res) => { 
     const header = req.headers['X-ARR-ClientCert'];
             if (!header) {
