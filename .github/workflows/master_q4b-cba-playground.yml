@@ -58,5 +58,5 @@ jobs:
         with:
           app-name: 'q4b-cba-playground'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3ABD6CAB1657425B80FA15573B794E87 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EC26A868EF9340F4BF4F8FE2F0316514 }}
           package: .
